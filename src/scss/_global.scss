@@ -101,6 +101,16 @@ p {
 	cursor: pointer;
 }
 
+.btn {
+	font-size: 12px;
+	letter-spacing: 2.18182px;
+	font-weight: 700;
+	padding: 33px 80px;
+	color: var(--color-white);
+	border-radius: 8px;
+	text-transform: uppercase;
+}
+
 .container {
 	margin: 0 auto;
 	padding: 0 30px;
@@ -109,4 +119,16 @@ p {
 
 .js-focus-visible :focus:not(.focus-visible) {
 	outline: none;
+}
+
+.section-title {
+	font-size: 64px;
+	line-height: 80px;
+	font-weight: 700;
+	color: var(--color-dark);
+}
+
+.section-title--center {
+	text-align: center;
+	max-width: none;
 }

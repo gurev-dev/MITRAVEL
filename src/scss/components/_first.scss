@@ -22,7 +22,7 @@
 	}
 
 	&_descr {
-		font-family: "SFCompactText" sans-serif;
+		font-family: "SFCompactText", sans-serif;
 		font-size: 14px;
 		line-height: 16px;
 		font-weight: 400;
@@ -71,14 +71,7 @@
 	}
 
 	&__btn {
-		font-size: 12px;
-		letter-spacing: 2.18182px;
-		font-weight: 700;
-		padding: 33px 80px;
-		color: var(--color-white);
 		background-color: var(--color-accent);
-		border-radius: 8px;
-		text-transform: uppercase;
 		position: relative;
 		z-index: 5;
 
@@ -95,12 +88,6 @@
 		width: calc(100% - 60px);
 		display: flex;
 		align-items: flex-end;
-	}
-
-	&__form {
-	}
-
-	&__slider {
 	}
 }
 
@@ -124,6 +111,7 @@
 		color: var(--color-dark);
 		padding-left: 55px;
 		padding-right: 90px;
+		border-bottom: 1px solid rgba(223, 223, 223, 0.5);
 	}
 
 	&__button {
