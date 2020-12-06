@@ -2,13 +2,17 @@
 @import "mixins";
 @import "fonts";
 @import "vendor";
-@import "settings";
+@import "global";
+
+// COMPONENTS IMPORTS
+@import "./components/_header.scss";
+@import "./components/_first.scss";
 
 // CUSTOM COMPONENTS STYLES
-// .burger {
-//   --burger-width: 40px;
-//   --burger-height: 20px;
-//   --burger-line-height: 2px;
+.burger {
+  --burger-width: 48px;
+  --burger-height: 10px;
+  --burger-line-height: 2px;
 
-//   @include burger;
-// }
+  @include burger;
+}

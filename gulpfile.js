@@ -149,7 +149,7 @@ const htmlInclude = () => {
 }
 
 const imgToApp = () => {
-	return src(['./src/img/**/*.{jpg,png,jpeg,gif,ico}'])
+	return src(['./src/img/**/*.{jpg,png,jpeg,gif,ico,svg}'])
 		.pipe(dest('./app/img'))
 }
 
@@ -199,7 +199,7 @@ const watchFiles = () => {
 
 	watch('./src/scss/**/*.scss', styles);
 	watch('./src/*.html', htmlInclude);
-	watch('./src/img/**/*.{jpg,png,jpeg,gif,ico}', imgToApp);
+	watch('./src/img/**/*.{jpg,png,jpeg,gif,ico,svg}', imgToApp);
 	watch('./src/img/**/*.svg', spriteSvg);
 	watch('./src/resources/**', resources);
 	watch('./src/fonts/*.ttf', fonts);
@@ -220,7 +220,7 @@ exports.default = series(clean, parallel(htmlInclude, scripts, fonts, resources,
 // build
 
 const imageMin = () => {
-	return src('./src/images/**/*.{jpg,png,svg,gif,ico}')
+	return src('./src/images/**/*.{jpg,png,jpeg,gif,ico,svg}')
 		.pipe(imagemin({
 			interlaced: true,
 			progressive: true,

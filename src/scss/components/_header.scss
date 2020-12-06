@@ -1,0 +1,52 @@
+.header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+
+	&__container {
+		justify-content: space-between;
+		padding-top: 55px;
+		padding-bottom: 55px;
+		align-items: center;
+	}
+}
+
+.social {
+	display: flex;
+	align-items: center;
+
+	&__item:not(:last-child) {
+		margin-right: 40px;
+	}
+
+	&__link {
+		display: block;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&__link--fb {
+		background-image: url(../../img/fb.svg);
+		width: 11px;
+		height: 20px;
+	}
+
+	&__link--tw {
+		background-image: url(../../img/tw.svg);
+		width: 20px;
+		height: 17px;
+	}
+}
+
+.logo {
+	font-size: 22px;
+	line-height: 1;
+	text-align: center;
+	letter-spacing: 2px;
+	font-weight: 700;
+	color: var(--color-white);
+	text-transform: uppercase;
+}

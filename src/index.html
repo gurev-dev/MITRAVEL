@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -7,17 +7,18 @@
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="theme-color" content="#111111">
-	<title>New site</title>
+	<title>MITRAVEL</title>
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
-	@include('_header.html')
-	<main>
-
-	</main>
-	@include('_footer.html')
-
+	<div class="site-container">
+		@include('_header.html')
+		<main class="main">
+			@include('_first.html')
+		</main>
+		@include('_footer.html')
+	</div>
 	<script src="js/main.js"></script>
 </body>
 
